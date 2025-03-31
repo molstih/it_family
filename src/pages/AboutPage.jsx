@@ -42,8 +42,8 @@ const AboutPage = () => {
                     <img src={cat} alt="Фотография кота" />
                         <h2>Кот Марсианец</h2>
                         <ul>
-                            <li><strong>Род деятельности:</strong> Сонная муха</li>
-                            <li><strong>Увлечения:</strong> Игры с мячиком. Игры с лазером</li>
+                            <li><strong>Род деятельности:</strong> Техноядная скотинка</li>
+                            <li><strong>Увлечения:</strong> Игры с мячиком. Поедать мониторы</li>
                         </ul>
                 </article>
             </section>
