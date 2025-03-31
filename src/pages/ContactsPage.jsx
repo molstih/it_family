@@ -89,7 +89,7 @@ const Wrapper = styled.section`
   min-height: 80vh;
   padding: 0 0;
 
-(@max-width: 768px) {
+@max-width: 768px {
   padding: 0 10px;
 }
 `;
@@ -106,7 +106,7 @@ const Section = styled.div`
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
-(@max-width: 768px) {
+  @max-width: 768px {
   width: 100%;
   padding: 10px;
 }
@@ -117,7 +117,7 @@ const Heading = styled.h2`
   font-weight: bold;
   color: #333;
 
-(@max-width: 768px) {
+  @max-width: 768px {
   font-size: 20px;
 }
 `;
@@ -127,7 +127,7 @@ const SocialLinks = styled.div`
   justify-content: space-evenly;
   margin-bottom: 40px;
 
-  (@max-width: 768px){
+  @max-width: 768px {
     flex-direction: column;
     align-items: center;
   }
@@ -146,7 +146,7 @@ const SocialLink = styled.a`
     color: #007bff;
   }
 
-(@max-width: 768px) {
+  @max-width: 768px {
     margin-left: 0;
     margin-bottom: 20px;
   }
@@ -158,7 +158,7 @@ const Form = styled.form`
   flex-direction: column;
   width: 80%;
 
-(@max-width: 768px) {
+  @max-width: 768px {
   width: 100%;
 }
 `;
@@ -180,7 +180,7 @@ const Input = styled.input`
   border-radius: 5px;
   outline: none;
 
-  (@max-width: 768px) {
+  @max-width: 768px {
   width: 100%;
 }
 `;
@@ -195,7 +195,7 @@ const TextArea = styled.textarea`
   resize: vertical;
   outline: none;
 
-(@max-width: 768px) {
+  @max-width: 768px {
   width: 100%;
 }
 `;
@@ -209,7 +209,7 @@ const Button = styled.button`
   cursor: pointer;
   margin-top: 20px;
 
-(@max-width: 768px) {
+  @max-width: 768px {
   width: 100%;
 }
 `;
