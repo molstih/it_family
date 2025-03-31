@@ -1,3 +1,4 @@
+
 import React from "react";
 import styled from "styled-components";
 import { FaVk, FaEnvelope, FaTelegramPlane, FaPhoneAlt } from "react-icons/fa"; // Добавлен импорт иконок
@@ -78,6 +79,8 @@ const ContactsPage = () => {
 };
 
 export default ContactsPage;
+
+// Стилизация компонентов
 const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
@@ -85,6 +88,10 @@ const Wrapper = styled.section`
   justify-content: center;
   min-height: 80vh;
   padding: 0 0;
+
+  @max-width: 768px {
+  padding: 0 10px;
+}
 `;
 
 const Section = styled.div`
@@ -98,19 +105,32 @@ const Section = styled.div`
   background-color: #c8a2c8;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  @max-width: 768px {
+  width: 100%;
+  padding: 10px;
+}
 `;
 
-const Heading = styled.h2`  
+const Heading = styled.h2`
   font-size: 28px;
   font-weight: bold;
   color: #333;
+
+  @max-width: 768px {
+  font-size: 20px;
+}
 `;
 
 const SocialLinks = styled.div`
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 40px;
-  
+
+  @max-width: 768px {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const SocialLink = styled.a`
@@ -125,12 +145,22 @@ const SocialLink = styled.a`
   &:hover {
     color: #007bff;
   }
+
+  @max-width: 768px {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
 `;
+
 
 const Form = styled.form`
   display: flex;
   flex-direction: column;
   width: 80%;
+
+  @max-width: 768px {
+  width: 100%;
+}
 `;
 
 const Label = styled.label`
@@ -149,11 +179,10 @@ const Input = styled.input`
   border: 1px solid #ccc;
   border-radius: 5px;
   outline: none;
-  transition: border-color 0.3s ease;
 
-  &:focus {
-    border-color: #007bff;
-  }
+  @max-width: 768px {
+  width: 100%;
+}
 `;
 
 const TextArea = styled.textarea`
@@ -165,37 +194,22 @@ const TextArea = styled.textarea`
   border-radius: 5px;
   resize: vertical;
   outline: none;
-  transition: border-color 0.3s ease;
 
-  &:focus {
-    border-color: #007bff;
-  }
+  @max-width: 768px {
+  width: 100%;
+}
 `;
 
 const Button = styled.button`
   padding: 10px 20px;
-  background-color: darkseagreen;
-  color: black;
+  background-color: #007bff;
+  color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  margin-top: 20px;
 
-  &:hover {
-    background-color: #0056b3;
-  }
-`;
-
-
-// Стили для уведомлений
-const SuccessMessage = styled.p`
-  color: green;
-  font-weight: bold;
-  margin-bottom: 20px;
-`;
-
-const ErrorMessage = styled.p`
-  color: red;
-  font-weight: bold;
-  margin-bottom: 20px;
+  @max-width: 768px {
+  width: 100%;
+}
 `;
