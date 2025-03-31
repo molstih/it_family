@@ -35,6 +35,14 @@
     color: black;
 }
 
+@media screen and ( min-width: 769px)
+{
+.hamburger {
+    display: none;
+}
+
+}
+
 /* Скрываем меню на маленьких экранах */
 @media screen and (max-width: 768px) {
     .navbar-list {

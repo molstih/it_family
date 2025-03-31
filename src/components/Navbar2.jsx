@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { FaBars} from "react-icons/fa"
 import "../css/navbar2.css";
 
 const Navbar2 = () => {
@@ -12,10 +13,11 @@ const Navbar2 = () => {
     return (
         <nav className="navbar">
             <button className="hamburger" onClick={handleToggleMenu}>
-                <i className="fas fa-bars"></i> {/* Используйте любой значок гамбургера */}
+                <FaBars />
+                {/*<i className="fas fa-bars">{FaBars}</i> {/* Используйте любой значок гамбургера */}
             </button>
 
-            <ul className={`navbar-list ${menuOpen ? 'show' : ''}`}> {/* Добавляем класс show при открытии */}
+            <ul className={`navbar-list ${menuOpen ? '' : 'show'}`}> {/* Добавляем класс show при открытии */}
                 <li><NavLink to="/" className="active">Главная страница</NavLink></li>
                 <li><NavLink to="/about" className="active">О нас</NavLink></li>
                 <li><NavLink to="/achieve" className="active">Достижения</NavLink></li>
