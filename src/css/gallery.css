@@ -10,6 +10,7 @@
 }
 
 .photo-card {    /* Запрещаем сжимание карточек */
+    background-color: #c8a2c8;
     height: 400px;
     min-width: 250px;   /* Минимальная ширина карточки */
     text-align: center;

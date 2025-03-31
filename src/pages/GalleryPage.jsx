@@ -1,59 +1,67 @@
 import React from 'react';
-import cat from '../images/cat.jpg'
-import daughter from '../images/daughter.jpg'
+import programma1 from '../images/gallery/programma1.jpg'
+import programm2 from '../images/gallery/programm2.jpg'
+import mom1 from '../images/gallery/mom_and_daughter.jpg'
+import mom2 from '../images/gallery/mom and daughter2.jpg'
+import ball1 from '../images/gallery/ball1.jpg'
+import ball2 from '../images/gallery/ball2.jpg'
+import papa_bike from '../images/gallery/papa_bike.jpg'
+import dance from '../images/gallery/dance.jpg'
+import karate from '../images/gallery/karate.jpg'
+import knitting from '../images/gallery/knitting.jpg'
 import '../css/gallery.css'; // Стили для компонентов
 import '../css/family.css'
 
 const photos = [
     {
         id: 1,
-        imageUrl: cat,
-        description: 'Описание первой фотографии'
+        imageUrl: mom1,
+        description: 'Луковка в гостях на работе у мамы 🤹🤹🤹'
     },
     {
         id: 2,
-        imageUrl: daughter,
-        description: 'Описание второй фотографии'
+        imageUrl: mom2,
+        description: 'Луковка и мама в аптеке ⛑️⛑️⛑️💊💊💊  '
     },
     {
-        id: 1,
-        imageUrl: cat,
-        description: 'Описание первой фотографии'
+        id: 3,
+        imageUrl: ball1,
+        description: 'Марсианец 🐹🐹🐹футболист ⚽️⚽️⚽️ '
     },
     {
-        id: 2,
-        imageUrl: daughter,
-        description: 'Описание второй фотографии'
+        id: 4,
+        imageUrl: ball2,
+        description: 'Марсик 🐱🐱🐱🐱 следит ⚽️⚽️⚽️⚽️'
     },
     {
-        id: 1,
-        imageUrl: cat,
-        description: 'Описание первой фотографии'
+        id: 5,
+        imageUrl: programma1,
+        description: 'Папа учит дочь жестко кодить 👷‍♂️👷‍♂️👷‍♂️'
     },
     {
-        id: 2,
-        imageUrl: daughter,
-        description: 'Описание второй фотографии'
+        id: 6,
+        imageUrl: programm2,
+        description: 'Папа учит дочь жестко кодить 👷‍♂️👷‍♂️👷‍♂️'
     },
     {
-        id: 1,
-        imageUrl: cat,
-        description: 'Описание первой фотографии'
+        id: 7,
+        imageUrl: dance,
+        description: 'Девочка и котик танцуют🎉🎉🎉'
     },
     {
-        id: 2,
-        imageUrl: daughter,
-        description: 'Описание второй фотографии'
+        id: 8,
+        imageUrl: karate,
+        description: 'Луковка - чемпион по карате 👍👍👍'
     },
     {
-        id: 1,
-        imageUrl: cat,
-        description: 'Описание первой фотографии'
+        id: 9,
+        imageUrl: papa_bike,
+        description: 'Папа упал с велосипеда 🤣🤣🤣 видимо 🍷🍷🍷'
     },
     {
-        id: 2,
-        imageUrl: daughter,
-        description: 'Описание второй фотографии'
+        id: 10,
+        imageUrl: knitting,
+        description: 'Мама учит Луковку вязать 👷‍♂️👷‍♂️👷‍♂️'
     },
     // Добавьте больше фотографий, если нужно
 ];
