@@ -51,11 +51,13 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 30px;
+    color: black;
 }
 
 p {
     line-height: 1.5;
     margin-bottom: 20px;
+    color: black;
 }
 
 /* Стилизация карточек членов семьи */

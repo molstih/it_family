@@ -9,6 +9,7 @@ import AboutPage from "./pages/AboutPage.jsx";
 import ContactsPage from "./pages/ContactsPage.jsx";
 import AchievePage from "./pages/AchievePage.jsx";
 import Footer from "./components/Footer.jsx";
+import DownloadBookPage from "./pages/DownloadBookPage.jsx";
 
 
 function App(){
@@ -21,6 +22,7 @@ function App(){
                     <Route path="/about" element={<AboutPage />}  />
                     <Route path="/achieve" element={<AchievePage />} />
                     <Route path="/contacts" element={<ContactsPage />} />
+                    <Route path="/book" element={<DownloadBookPage />} />
                 </Routes>
                 <Footer />
             </div>
