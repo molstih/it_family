@@ -127,7 +127,7 @@ const SocialLinks = styled.div`
   justify-content: space-evenly;
   margin-bottom: 40px;
 
-  @max-width: 768px {
+  (@max-width: 768px){
     flex-direction: column;
     align-items: center;
   }
