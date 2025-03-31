@@ -181,7 +181,7 @@ const Input = styled.input`
   outline: none;
 
   @media screen and (max-width: 768px) {
-  width: 80%;
+  width: 90%;
 }
 `;
 
@@ -196,7 +196,7 @@ const TextArea = styled.textarea`
   outline: none;
 
   @media screen and (max-width: 768px) {
-  width: 80%;
+  width: 90%;
 }
 `;
 
