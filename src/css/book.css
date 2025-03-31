@@ -52,6 +52,7 @@
 /* Медиазапросы для мобильных устройств */
 @media only screen and (max-width: 600px) {
     .card {
+        width: 200px;
         padding: 10px;
     }
 
