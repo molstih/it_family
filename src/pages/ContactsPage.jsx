@@ -88,7 +88,7 @@ const Wrapper = styled.section`
 `;
 
 const Section = styled.div`
-  width: 600px;
+  width: 500px;
   margin: 10px 0;
   display: flex;
   flex-direction: column;
