@@ -32,6 +32,7 @@ const ContactsPage = () => {
 
     return (
         <Wrapper>
+            <Heading>С нами можно связаться:</Heading>
             <Section>
                 <Heading>Контактная информация</Heading>
                 <SocialLinks>
@@ -71,16 +72,7 @@ const ContactsPage = () => {
                     <Button type="submit">Отправить</Button>
                 </Form>
             </Section>
-            <MapSection>
-                <iframe
-                    src={`https://www.google.com/maps/embed/v1/place?q=г.+Липецк,+ул.+Минская,+д.4Б+корп.1&key=AIzaSyDhFz248729f8wP0D3Af9MFVxAa3Ko7Oc0`}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Карта"
-                    style={{ border: 0, width: "100%", height: "450px" }}
-                />
-            </MapSection>
+
         </Wrapper>
     );
 };
@@ -91,28 +83,27 @@ const Wrapper = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  padding: 40px 0;
+  min-height: 80vh;
+  padding: 0 0;
 `;
 
 const Section = styled.div`
   width: 600px;
-  margin: 5px 0;
+  margin: 10px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px;
+  padding: 10px;
   background-color: #c8a2c8;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 `;
 
-const Heading = styled.h2`
+const Heading = styled.h2`  
   font-size: 28px;
   font-weight: bold;
   color: #333;
-  margin-bottom: 20px;
 `;
 
 const SocialLinks = styled.div`
@@ -195,14 +186,6 @@ const Button = styled.button`
   }
 `;
 
-const MapSection = styled.div`
-  width: 90vw;
-  max-width: 800px;
-  margin: 20px 0;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-`;
 
 // Стили для уведомлений
 const SuccessMessage = styled.p`

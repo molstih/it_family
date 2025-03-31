@@ -8,9 +8,10 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <ul className="navbar-list">
-                <li><NavLink to="/" className="active">Приветствие</NavLink></li>
+                <li><NavLink to="/" className="active">Главная страница</NavLink></li>
                 <li><NavLink to="/about" className="active">О нас</NavLink></li>
                 <li><NavLink to="/achieve" className="active">Достижения</NavLink></li>
+                <li><NavLink to="/lukovka" className="active">Луковка и хвостатый Марсианец</NavLink></li>
                 <li><NavLink to="/contacts" className="active">Контакты</NavLink></li>
             </ul>
         </nav>

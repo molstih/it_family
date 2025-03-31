@@ -13,37 +13,37 @@ const AboutPage = () => {
             <section className="family-members">
                 <article className="member-card">
                     <img src={mom} alt="Фотография мамы" />
-                        <h2>Мама</h2>
+                        <h2>Мама Капустина</h2>
                         <ul>
-                            <li><strong>Род деятельности:</strong> Врач-педиатр</li>
-                            <li><strong>Увлечения:</strong> Чтение книг, кулинария</li>
+                            <li><strong>Род деятельности:</strong> Фармацевт </li>
+                            <li><strong>Увлечения:</strong> Вязание, кулинария</li>
                         </ul>
                 </article>
 
                 <article className="member-card">
                     <img src={dad} alt="Фотография папы" />
-                        <h2>Папа</h2>
+                        <h2>Папа Томатыч</h2>
                         <ul>
-                            <li><strong>Род деятельности:</strong> Инженер-программист</li>
-                            <li><strong>Увлечения:</strong> Велоспорт, путешествия</li>
+                            <li><strong>Род деятельности:</strong> Геймер </li>
+                            <li><strong>Увлечения:</strong> Комиксы, ПК-игры</li>
                         </ul>
                 </article>
 
                 <article className="member-card">
                     <img src={daughter} alt="Фотография дочери" />
-                        <h2>Дочь</h2>
+                        <h2>Дочь Луковка</h2>
                         <ul>
                             <li><strong>Род деятельности:</strong> Учеба в школе</li>
-                            <li><strong>Увлечения:</strong> Рисование, танцы</li>
+                            <li><strong>Увлечения:</strong> Рисование, танцы, карате</li>
                         </ul>
                 </article>
 
                 <article className="member-card">
                     <img src={cat} alt="Фотография кота" />
-                        <h2>Кот</h2>
+                        <h2>Кот Марсианец</h2>
                         <ul>
-                            <li><strong>Род деятельности:</strong> Охота на мышей</li>
-                            <li><strong>Увлечения:</strong> Сон, игра с мячиком</li>
+                            <li><strong>Род деятельности:</strong> Сонная муха</li>
+                            <li><strong>Увлечения:</strong> Игры с мячиком. Игры с лазером</li>
                         </ul>
                 </article>
             </section>
