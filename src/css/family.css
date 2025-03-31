@@ -11,23 +11,23 @@ body {
 }
 
 .app-container {
+    margin-top: 60px;
+    margin-bottom: 40px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 .home {
-    margin-top: 60px;
-    margin-bottom: 40px;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    font-size: 48px;
+    min-height: 90vh;
 }
 
 .welcome {
-
+    font-size: 48px;
 }
 
 .active {
