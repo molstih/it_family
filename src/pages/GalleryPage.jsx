@@ -68,11 +68,15 @@ const PhotoCard = ({ imageUrl, description }) => (
 
 // Основной компонент галереи
 const GalleryPage = () => (
+    <div>
+        <h1>Галерея</h1>
     <div className="gallery">
+
         {photos.map(photo => (
             <PhotoCard key={photo.id} {...photo} />
         ))}
     </div>
-);
+    </div>
+)
 
 export default GalleryPage;

@@ -17,12 +17,19 @@
     list-style-type: none; /* Убираем маркеры списка */
     padding-left: 0; /* Убираем отступ слева */
     display: flex; /* Преобразуем список в flex-контейнер */
+    justify-content: space-between;
     gap: 20px; /* Добавляем расстояние между элементами */
     align-items: center; /* Вертикальное выравнивание элементов */
 }
 
+.navbar-list li {
+    flex-grow: 1;
+    text-align: center;
+}
+
 .navbar-list>li>a{
     background-color: darkseagreen;
+    display: block;
     color: black;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -30,4 +37,20 @@
 
 .navbar-list>li>a:hover{
     color: lightblue;
+}
+
+@media screen and ( max-width: 768px) {
+    .navbar-list {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .navbar-list li {
+        flex-grow: 0;
+    }
+
+    .navbar-list li a {
+        padding: 18px 32px;
+        font-size: 18px;
+    }
 }
