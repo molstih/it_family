@@ -15,7 +15,6 @@
 }
 
 .navbar-list {
-
     list-style-type: none; /* Убираем маркеры списка */
     padding-left: 0; /* Убираем отступ слева */
     display: flex; /* Преобразуем список в flex-контейнер */
@@ -32,4 +31,92 @@
 
 .navbar-list>li>a:hover{
     color: lightblue;
+}
+
+Чтобы сделать навигационную панель адаптивной для различных размеров экранов, мы можем использовать медиа-запросы CSS. Медиа-запросы позволяют изменять внешний вид веб-страницы в зависимости от ширины устройства. В данном случае, мы адаптируем меню так, чтобы оно выглядело хорошо на разных устройствах — больших экранах, планшетах и мобильных телефонах.
+
+Ниже приведён пример адаптивного стиля для вашей навигационной панели:
+
+### navbar.css
+
+        /* Базовые стили для всех устройств */
+    .navbar {
+        background-color: #f9f9f9;
+        padding: 15px 0;
+        position: relative;
+        z-index: 999; /* Навигация должна оставаться поверх остальных элементов */
+    }
+
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-list li a {
+    display: block;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: #222;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Адаптивные стили для небольших экранов */
+@media screen and (max-width: 768px) {
+.navbar-list {
+    flex-direction: column;
+    align-items: stretch;
+    position: fixed;
+    top: 70px; /* Отступ для логотипа или заголовка */
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 70px); /* Высота меню */
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-list.open {
+    transform: translateX(100%);
+}
+
+.navbar-list li a {
+    padding: 18px 32px;
+    font-size: 18px;
+}
+
+.hamburger {
+    position: absolute;
+    right: 25px;
+    top: 22px;
+    cursor: pointer;
+    display: block;
+    z-index: 1000;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.open .line1 {
+    transform: rotate(-45deg) translate(-7px, 7px);
+}
+
+.open .line2 {
+    opacity: 0;
+}
+
+.open .line3 {
+    transform: rotate(45deg) translate(-7px, -7px);
+}
+}
+
+/* Поведение гамбургера при нажатии */
+.hamburger:hover .line {
+    background-color: #555;
 }

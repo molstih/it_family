@@ -10,6 +10,7 @@ import ContactsPage from "./pages/ContactsPage.jsx";
 import AchievePage from "./pages/AchievePage.jsx";
 import Footer from "./components/Footer.jsx";
 import DownloadBookPage from "./pages/DownloadBookPage.jsx";
+import GalleryPage from "./pages/GalleryPage.jsx";
 
 
 function App(){
@@ -23,6 +24,7 @@ function App(){
                     <Route path="/achieve" element={<AchievePage />} />
                     <Route path="/contacts" element={<ContactsPage />} />
                     <Route path="/book" element={<DownloadBookPage />} />
+                    <Route path="/gallery" element={<GalleryPage />} />
                 </Routes>
                 <Footer />
             </div>
