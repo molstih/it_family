@@ -1,0 +1,35 @@
+.navbar {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для визуального эффекта */
+}
+
+.navbar-list {
+
+    list-style-type: none; /* Убираем маркеры списка */
+    padding-left: 0; /* Убираем отступ слева */
+    display: flex; /* Преобразуем список в flex-контейнер */
+    gap: 20px; /* Добавляем расстояние между элементами */
+    align-items: center; /* Вертикальное выравнивание элементов */
+}
+
+.navbar-list>li>a{
+    background-color: darkseagreen;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-list>li>a:hover{
+    color: lightblue;
+}

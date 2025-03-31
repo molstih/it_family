@@ -1,0 +1,40 @@
+{
+  "persons": [
+    {
+      "id" : 1,
+      "name": "Томатыч",
+      "role": "Отец",
+      "age": 32,
+      "profession": "IT",
+      "avatar": ""
+
+    },
+    {
+      "id" : 1,
+      "name": "Капустина",
+      "role": "Отец",
+      "age": 32,
+      "profession": "IT",
+      "avatar": ""
+
+    },
+    {
+      "id" : 3,
+      "name": "Луковка",
+      "role": "Отец",
+      "age": 32,
+      "profession": "IT",
+      "avatar": ""
+
+    },
+    {
+      "id" : 4,
+      "name": "Марсианец",
+      "role": "Отец",
+      "age": 32,
+      "profession": "IT",
+      "avatar": ""
+
+    }
+  ]
+}
