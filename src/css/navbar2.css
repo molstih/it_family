@@ -43,7 +43,7 @@
         top: 60px; /* Отступ для кнопки гамбургера */
         left: 0;
         width: 100%;
-        background-color: #f9f9f9;
+        background-color: grey;
         transform: translateY(-100%); /* Изначально скрыто */
         transition: transform 0.3s ease-in-out;
     }

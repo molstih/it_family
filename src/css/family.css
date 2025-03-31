@@ -17,6 +17,7 @@ body {
 }
 
 .home {
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,12 +102,20 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+    .home {
+        margin-top: 60px;
+    }
+
     .member-card{
         width: 45%;
     }
 }
 
 @media screen and (max-width: 480px) {
+    .home {
+        margin-top: 60px;
+    }
+
     .member-card{
         width: 100%;
     }
