@@ -1,0 +1,77 @@
+
+/* Основные стили для всех экранов */
+.navbar {
+    background-color: grey;
+    padding: 15px 0;
+    position: fixed;
+    z-index: 999; /* Навигация должна оставаться поверх остальных элементов */
+}
+
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.navbar-list li {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.navbar-list li a {
+    display: block;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: #222;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-list li a.active {
+    background-color: darkseagreen;
+    color: black;
+}
+
+/* Скрываем меню на маленьких экранах */
+@media screen and (max-width: 768px) {
+    .navbar-list {
+        flex-direction: column;
+        position: fixed;
+        top: 60px; /* Отступ для кнопки гамбургера */
+        left: 0;
+        width: 100%;
+        background-color: #f9f9f9;
+        transform: translateY(-100%); /* Изначально скрыто */
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-list.show {
+        transform: translateY(0); /* Открывается при нажатии на гамбургер */
+    }
+
+    .navbar-list li {
+        flex-grow: 0;
+    }
+
+    .navbar-list li a {
+        padding: 18px 32px;
+        font-size: 18px;
+    }
+
+    .hamburger {
+        position: absolute;
+        right: 25px;
+        top: 22px;
+        cursor: pointer;
+        display: block;
+        z-index: 1000;
+    }
+
+    .hamburger i {
+        font-size: 24px;
+        color: #444;
+    }
+}
