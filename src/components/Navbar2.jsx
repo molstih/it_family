@@ -18,7 +18,7 @@ const Navbar2 = () => {
             </button>
 
             <ul className={`navbar-list ${menuOpen ? 'show' : ''}`}> {/* Добавляем класс show при открытии */}
-                <li><NavLink to="/" className="active">Главная страница</NavLink></li>
+                <li><NavLink to="/" className="active" onClick={setMenuOpen(false)}>Главная страница</NavLink></li>
                 <li><NavLink to="/about" className="active">О нас</NavLink></li>
                 <li><NavLink to="/achieve" className="active">Достижения</NavLink></li>
                 <li><NavLink to="/gallery" className="active">Gallery</NavLink></li>
