@@ -10,6 +10,10 @@ const Navbar2 = () => {
         setMenuOpen(!menuOpen);
     };
 
+    const closeMenu = () => {
+        setMenuOpen(false)
+    }
+
     return (
         <nav className="navbar">
             <button className="hamburger" onClick={handleToggleMenu}>
@@ -18,12 +22,12 @@ const Navbar2 = () => {
             </button>
 
             <ul className={`navbar-list ${menuOpen ? 'show' : ''}`}> {/* Добавляем класс show при открытии */}
-                <li><NavLink to="/" className="active" onClick={setMenuOpen(false)}>Главная страница</NavLink></li>
-                <li><NavLink to="/about" className="active">О нас</NavLink></li>
-                <li><NavLink to="/achieve" className="active">Достижения</NavLink></li>
-                <li><NavLink to="/gallery" className="active">Gallery</NavLink></li>
-                <li><NavLink to="/book" className="active">Луковка и хвостатый Марсианец</NavLink></li>
-                <li><NavLink to="/contacts" className="active">Контакты</NavLink></li>
+                <li onClick={closeMenu}><NavLink to="/" className="active">Главная страница</NavLink></li>
+                <li onClick={closeMenu}><NavLink to="/about" className="active">О нас</NavLink></li>
+                <li onClick={closeMenu}><NavLink to="/achieve" className="active">Достижения</NavLink></li>
+                <li onClick={closeMenu}><NavLink to="/gallery" className="active">Gallery</NavLink></li>
+                <li onClick={closeMenu}><NavLink to="/book" className="active">Луковка и хвостатый Марсианец</NavLink></li>
+                <li onClick={closeMenu}><NavLink to="/contacts" className="active">Контакты</NavLink></li>
             </ul>
         </nav>
     );
