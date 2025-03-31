@@ -56,7 +56,7 @@ const photos = [
     {
         id: 9,
         imageUrl: papa_bike,
-        description: 'Папа упал с велосипеда 🤣🤣🤣 видимо 🍷🍷🍷'
+        description: 'Папа катался 🚴‍♂️ и чет приуныл 🤣🤣🤣 видимо устал 🥱🥱🥱'
     },
     {
         id: 10,
