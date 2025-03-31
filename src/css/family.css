@@ -18,16 +18,16 @@ body {
 
 .home {
     margin-top: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    font-size: 48px;
 }
 
 .welcome {
-    font-size: 48px;
-    margin-bottom: 30px;
+
 }
 
 .active {
