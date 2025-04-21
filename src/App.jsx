@@ -11,6 +11,7 @@ import AchievePage from "./pages/AchievePage.jsx";
 import Footer from "./components/Footer.jsx";
 import DownloadBookPage from "./pages/DownloadBookPage.jsx";
 import GalleryPage from "./pages/GalleryPage.jsx";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage.jsx";
 
 
 function App(){
@@ -25,6 +26,7 @@ function App(){
                     <Route path="/contacts" element={<ContactsPage />} />
                     <Route path="/book" element={<DownloadBookPage />} />
                     <Route path="/gallery" element={<GalleryPage />} />
+                    <Route path="/policy" element={<PrivacyPolicyPage />} />
                 </Routes>
                 <Footer />
             </div>

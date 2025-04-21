@@ -25,23 +25,6 @@ const DownloadBookPage = () =>  {
         }
     };
 
-    const downloadPolicy = async () => {
-        try {
-            const response = await axios.get('/api/book/', {
-                responseType: 'blob' // Установка типа ответа Blob для скачивания файла
-            });
-            const url = window.URL.createObjectURL(new Blob([response.data]));
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = "policy.txt"; // Имя файла для сохранения
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        } catch (error) {
-            console.error('Ошибка при загрузке:', error);
-        }
-    };
-
     return (
         <div>
             <div className="card">
@@ -58,12 +41,7 @@ const DownloadBookPage = () =>  {
                     вдохновляя детей на развитие своих талантов и интересов.</p>
                 <p>Эта книга доступна только в формате PDF.</p>
             </div>
-            <div className="card">
-                <img src={loadApp} alt="Политика конфиденциальности" />
-                <h3>Скачать политику конфиденциальности</h3>
-                <button className="btn-download" onClick={downloadPolicy}>Скачать</button>
-                <p>Скачать политику конфиденциальности мобильной игры на Android: "Приключения кота-детектива"</p>
-            </div>
+
         </div>
     );
 };
