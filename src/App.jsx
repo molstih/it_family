@@ -12,6 +12,7 @@ import Footer from "./components/Footer.jsx";
 import DownloadBookPage from "./pages/DownloadBookPage.jsx";
 import GalleryPage from "./pages/GalleryPage.jsx";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage.jsx";
+import GamePage from "./pages/GamePage.jsx";
 
 
 function App(){
@@ -27,6 +28,7 @@ function App(){
                     <Route path="/book" element={<DownloadBookPage />} />
                     <Route path="/gallery" element={<GalleryPage />} />
                     <Route path="/policy" element={<PrivacyPolicyPage />} />
+                    <Route path="/game" element={<GamePage />} />
                 </Routes>
                 <Footer />
             </div>

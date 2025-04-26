@@ -27,6 +27,7 @@ const Navbar2 = () => {
                 <li onClick={closeMenu}><NavLink to="/achieve" className="active">Достижения</NavLink></li>
                 <li onClick={closeMenu}><NavLink to="/gallery" className="active">Галерея</NavLink></li>
                 <li onClick={closeMenu}><NavLink to="/book" className="active">Луковка и хвостатый Марсианец</NavLink></li>
+                <li onClick={closeMenu}><NavLink to="/game" className="active">Марсик-детектив</NavLink></li>
                 <li onClick={closeMenu}><NavLink to="/contacts" className="active">Контакты</NavLink></li>
             </ul>
         </nav>

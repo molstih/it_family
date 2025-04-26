@@ -123,3 +123,32 @@ footer {
     z-index: 0;
 }
 
+
+
+.screenshots-container {
+    overflow-x: auto; /* Включаем горизонтальную прокрутку */
+    white-space: nowrap; /* Убираем перенос строк между элементами */
+    padding: 1rem 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.screenshots-container img {
+    object-fit: contain;
+    flex-shrink: 0;
+    width: 200px; /* Ширина каждого изображения фиксированная */
+    height: auto;
+    margin-right: 1rem; /* Отступ справа для удобочитаемости */
+    vertical-align: top; /* Выравниваем по верхнему краю */
+    cursor: pointer;
+    transition: opacity .3s linear;
+}
+
+.screenshots-container img:hover {
+    opacity: 0.8;
+}
+
+.game-content {
+    padding-top: 40px;
+}
